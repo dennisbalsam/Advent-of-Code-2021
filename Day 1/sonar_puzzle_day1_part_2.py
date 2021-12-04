@@ -30,7 +30,7 @@
 
 # Consider sums of a three-measurement sliding window. How many sums are larger than the previous sum?
 
-with open('sonar_values.txt', 'r') as f:
+with open('input.txt', 'r') as f:
     number_greater = 0
     values = [int(value) for value in f.read().splitlines()]
     previous_sum = sum(values[0:3]) # first 3 value sum does no comparison

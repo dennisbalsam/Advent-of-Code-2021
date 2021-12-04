@@ -41,6 +41,6 @@
 # How many measurements are larger than the previous measurement?
 
 
-with open('sonar_values.txt', 'r') as f:
+with open('input.txt', 'r') as f:
     values = [int(value) for value in f.read().splitlines()]
     print(sum(values[i] > values[i-1] for i in range(1, len(values))))
